@@ -1,5 +1,5 @@
 
-# Linked list DS
+# Linked list 
 
 
 class LinkedList:
@@ -61,6 +61,7 @@ class LinkedList:
     
         
     def remove_node(self, target_node_data):
+        # check if list is empty
         if self.head is None:
             raise Exception('List is empty')
         
@@ -69,6 +70,7 @@ class LinkedList:
             self.head = self.head.next
             return
 
+        # save the previous node
         previous_node = self.head
         for node in self:
             if node.data == target_node_data:
