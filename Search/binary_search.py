@@ -13,7 +13,7 @@ def binary_search(array, target):
     # while the array has more than 1 element
     while lo <= hi:
         mid_ind = (lo + hi) // 2
-
+        
         if array[mid_ind] == target:
             return True
         
